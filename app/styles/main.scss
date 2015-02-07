@@ -13,6 +13,7 @@ header {
 ul#social-icons {
   list-style: none;
   padding: 0;
+  margin: 0;
   text-align: right;
   li {
     display: inline-block;
@@ -24,7 +25,8 @@ ul#social-icons {
 }
 
 img#main-logo {
-
+  width: 86%;
+  margin-bottom: 1em;
 }
 
 .category-wrapper {
@@ -45,5 +47,24 @@ img#main-logo {
     padding: 0;
     position: absolute;
     min-width: 140px;
+    visibility: hidden;
+  }
+}
+
+main {
+  background: #ddd;
+  padding: 2.5%;
+}
+
+article {
+  background: white;
+  margin: 2em 0 1em;
+  position: relative;
+  padding: 2.5%;
+  .article-washi {
+    position: absolute;
+    top: -10px;
+    left: 5%;
+    width: 80px;
   }
 }
