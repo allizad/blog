@@ -1,0 +1,49 @@
+// bower:scss
+// endbower
+@import url(http://fonts.googleapis.com/css?family=Antic+Slab|Simonetta|Josefin+Slab|Slabo+13px);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Quicksand|Raleway:400,300);
+
+$margin: 2.5%;
+
+header {
+  padding: $margin;
+}
+
+ul#social-icons {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+  li {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  svg {
+    height: 1rem;
+  }
+}
+
+img#main-logo {
+
+}
+
+.category-wrapper {
+  .category-inner {
+    margin-right: auto;
+    margin-left: auto;
+    width: 140px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  width: 100%;
+  button {
+    width: 100%;
+  }
+  ul.category-list {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    min-width: 140px;
+  }
+}
