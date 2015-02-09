@@ -3,6 +3,20 @@
 // generated on 2015-02-07 using generator-gulp-webapp 0.2.0
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+var uglify = require('gulp-uglify');
+var minifyCSS = require('gulp-minify-css');
+
+gulp.task('minify-css', function() {
+  gulp.src('./.tmp/styles/main.css')
+    .pipe(minifyCSS({keepBreaks:true}))
+    .pipe(gulp.dest('./dist/'))
+});
+
+gulp.task('compress', function() {
+  gulp.src('app/scripts/*.js')
+    .pipe(uglify())
+    .pipe(gulp.dest('dist'))
+});
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
