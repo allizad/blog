@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>beatrix</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Josefin+Slab" rel="stylesheet" type="text/css">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -211,12 +212,12 @@
       <div class="category-wrapper">
         <div class="category-inner">
           <button name="button" id="category">categories</button>
-          <ul class="category-list">
-          <li><a href="#">shop</a></li>
-          <li><a href="#">products</a></li>
-          <li><a href="#">diy</a></li>
-          <li><a href="#">events</a></li>
-          <li><a href="#">studio hq</a></li>
+          <ul class="" id="category-list">
+          <li><a href="#"><h5>shop</h5></a></li>
+          <li><a href="#"><h5>products</h5></a></li>
+          <li><a href="#"><h5>diy</h5></a></li>
+          <li><a href="#"><h5>events</h5></a></li>
+          <li><a href="#"><h5>studio hq</h5></a></li>
           </ul>
         </div>
       </div>
@@ -225,7 +226,7 @@
     <main>
 
       <!-- main articles -->
-
+      <div class="article-feed">
         <article class="post-snippet">
           <img src="images/washi.png" class="article-washi" alt="" />
           <div class="details">
@@ -259,8 +260,8 @@
               </li>
             </ul>
             <hr>
-            <h4>related posts</h4>
-            <ul>
+            <ul class="related-posts">
+              <h4>related posts</h4>
               <li><a href="#">Easter Brunch</a></li>
               <li><a href="#">Calligraphy Workshop</a></li>
               <li><a href="#">Madeline's Paint Party</a></li>
@@ -301,16 +302,53 @@
               </li>
             </ul>
             <hr>
-            <h4>related posts</h4>
-            <ul>
+            <ul class="related-posts">
+              <h4>related posts</h4>
               <li><a href="#">Easter Brunch</a></li>
               <li><a href="#">Calligraphy Workshop</a></li>
               <li><a href="#">Madeline's Paint Party</a></li>
             </ul>
           </div>
         </article>
+      </div>
 
+    <!-- side navigation -->
+    <div id="side-nav">
+      <ul id="side-topics">
+        <li>
+          <a href="#story" class="side-link">
+            <img src="images/story-aside.jpg" class="pure-img" alt="" />
+            <p>our story</p>
+          </a>
+        </li>
+        <li>
+          <a href="#patterns" class="side-link">
+            <img src="images/patterns-aside.jpg" class="pure-img" alt="" />
+            <p>patterns</p>
+          </a>
+        </li>
+        <li>
+          <a href="#diy" class="side-link">
+            <img src="images/diy-aside.jpg" class="pure-img" alt="" />
+            <p>diy</p>
+          </a>
+        </li>
+        <li>
+          <a href="#events" class="side-link">
+            <img src="images/events-aside.jpg" class="pure-img" alt="" />
+            <p>events</p>
+          </a>
+        </li>
+      </ul>
+    </div>
     </main>
+
+    <footer>
+      <form method="put" id="email-subscribe" class="pure-form">
+        <label for="email">sign up for our email list</label>
+        <input name="email" type="email" value="" placeholder="">
+      </form>
+    </footer>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -325,6 +363,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/classie/classie.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
