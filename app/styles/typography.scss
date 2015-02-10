@@ -1,27 +1,18 @@
-$margin: 2.5%;
 $quicksand-font: "Quicksand", sans-serif;
 $josefin-font: "Josefin Slab", serif;
 
 $main-sans-font: $quicksand-font;
 $main-serif-font: $josefin-font;
 
-$brand-color: #57D2C8;
-$light-brand-color: lighten($brand-color, 20%);
-$dark-brand-color: darken($brand-color, 10%);
-$gray: #9C9A9A;
-$light-gray: lighten($gray, 10%);
-$paragraph-color: gray;
-
-
 p {
   color: $paragraph-color;
   img {
-    width: 100%;
+    width: 100% !important;
   }
 }
 
 h5 {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
   margin: 0.5em;
 }
 
@@ -37,7 +28,8 @@ h2.title {
   margin: 0.75em 0 0.25em;
   font-size: 2em;
   a {
-    font-family: $main-serif-font;
+    font-family: $main-serif-font !important;
+    font-weight: 600;
   }
 }
 

@@ -16,13 +16,13 @@ ul#side-topics {
     float: left;
     p {
       font-family: $main-serif-font;
+      font-weight: 600;
       background-color: $brand-color;
       text-transform: uppercase;
       color: white;
       text-align: center;
       margin: 0;
       line-height: 2;
-      font-size: 0.75em;
       letter-spacing: 0.19em;
     }
     img {

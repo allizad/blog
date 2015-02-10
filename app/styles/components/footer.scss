@@ -3,6 +3,7 @@ footer {
 }
 
 form#email-subscribe {
+  text-align: center;
   background-color: $light-brand-color;
   color: gray;
   padding: $margin;
@@ -11,6 +12,7 @@ form#email-subscribe {
     text-align: center;
   }
   input {
+    margin-top: 1em;
     border-radius: 0;
     width: 100%;
   }

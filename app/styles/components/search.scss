@@ -9,6 +9,8 @@
   input {
     width: 75%;
     border-radius: 0;
+    font-size: 1em;
+    font-family: $main-sans-font;
   }
   svg polygon {
     fill: gray;
@@ -25,7 +27,7 @@
 
 #close-wrapper {
   position: absolute;
-  width: 2rem;
-  top: 9px;
-  right: 7.5%;
+  width: 1.5em;
+  top:  20%;
+  right: 9.5%;
 }

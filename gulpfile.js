@@ -18,6 +18,10 @@ gulp.task('compress', function() {
     .pipe(gulp.dest('dist'))
 });
 
+gulp.task('minify', ['minify-css', 'compress'], function(){
+
+});
+
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
     .pipe($.plumber())

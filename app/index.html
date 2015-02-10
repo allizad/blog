@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>beatrix</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand|Josefin+Slab" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Josefin+Slab:400,600" rel="stylesheet" type="text/css">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -221,10 +222,10 @@
 
       <!-- logo -->
       <div class="logo-wrapper">
-        <a href="#"><img id="main-logo" src="images/logo-prettysimple.svg" alt="May Designs Logo" /></a>
+        <a href="#"><img nopin="nopin" id="main-logo" src="images/logo-prettysimple.svg" alt="May Designs Logo" /></a>
       </div>
 
-      <div class="category-wrapper">
+      <div class="category-wrapper" id="phone-nav">
         <div class="category-inner">
           <button name="button" id="category">categories</button>
           <ul class="" id="category-list">
@@ -237,11 +238,21 @@
         </div>
       </div>
 
+      <div id="desktop-nav">
+        <ul>
+          <li><a href="#"><h5>shop</h5></a></li>
+          <li><a href="#"><h5>patterns</h5></a></li>
+          <li><a href="#"><h5>events</h5></a></li>
+          <li><a href="#"><h5>diy</h5></a></li>
+          <li><a href="#"><h5>products</h5></a></li>
+        </ul>
+      </div>
+
     </header>
-    <main>
+    <main class="pure-g">
 
       <!-- main articles -->
-      <div class="article-feed">
+      <div class="article-feed pure-u-1 pure-u-md-2-3">
         <article class="post-snippet">
           <img src="images/washi.png" class="article-washi" alt="" />
           <div class="details">
@@ -271,7 +282,9 @@
                 <a href="#"><img src="images/instagram-icon.svg" alt="" /></a>
               </li>
               <li>
-                <a href="#"><img src="images/pinterest-icon.svg" alt="" /></a>
+                <a href="//www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark"  data-pin-shape="round" data-pin-height="32" class="pinterest-button"><img src="images/pinterest-icon.svg" /></a>
+<!-- Please call pinit.js only once per page -->
+<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
               </li>
             </ul>
             <hr>
@@ -328,7 +341,7 @@
 
         <!-- older or newer posts -->
 
-        <div id="post-navigation">
+        <div id="post-navigation" class="pure-u-1">
           <span class="older"><a href="#"> < older posts</a></span>
           <span class="recent"><a href="#">recent posts > </a></span>
         </div>
@@ -336,29 +349,29 @@
       </div>
 
     <!-- side navigation -->
-    <div id="side-nav">
+    <div id="side-nav" class="pure-u-1 pure-u-md-1-5">
       <ul id="side-topics">
         <li>
           <a href="#story" class="side-link">
-            <img src="images/story-aside.jpg" class="pure-img" alt="" />
+            <img nopin="nopin" src="images/story-aside.jpg" class="pure-img" alt="" />
             <p>our story</p>
           </a>
         </li>
         <li>
           <a href="#patterns" class="side-link">
-            <img src="images/patterns-aside.jpg" class="pure-img" alt="" />
+            <img nopin="nopin" src="images/patterns-aside.jpg" class="pure-img" alt="" />
             <p>patterns</p>
           </a>
         </li>
         <li>
           <a href="#diy" class="side-link">
-            <img src="images/diy-aside.jpg" class="pure-img" alt="" />
+            <img nopin="nopin" src="images/diy-aside.jpg" class="pure-img" alt="" />
             <p>diy</p>
           </a>
         </li>
         <li>
           <a href="#events" class="side-link">
-            <img src="images/events-aside.jpg" class="pure-img" alt="" />
+            <img nopin="nopin" src="images/events-aside.jpg" class="pure-img" alt="" />
             <p>events</p>
           </a>
         </li>
@@ -393,5 +406,8 @@
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
+
+        <!-- Please call pinit.js only once per page -->
+    <script type="text/javascript" async defer  data-pin-shape="round" data-pin-height="32" data-pin-hover="true" src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>

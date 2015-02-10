@@ -12,9 +12,9 @@ article {
   padding: 2.5%;
   .article-washi {
     position: absolute;
-    top: -10px;
-    left: 5%;
-    width: 8rem;
+    width: 131px;
+    top: -12px;
+    left: $margin*2;
   }
 }
 
@@ -39,6 +39,8 @@ ul.related-posts {
   h4 {
     text-transform: uppercase;
     margin: 1em 0;
+    font-family: $main-sans-font !important;
+    color: $gray;
   }
   a {
     font-style: italic;
@@ -47,5 +49,11 @@ ul.related-posts {
       color: $dark-brand-color;
       text-decoration: underline;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article-feed {
+
   }
 }

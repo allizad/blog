@@ -7,6 +7,14 @@ var closeSearchIcon = document.getElementById('close-wrapper');
 // construct lightbox
 var $lightBox = $('<div></div>').addClass('lightbox');
 
+// add event listeners
+$lightBox.click(function(){
+  // close search box
+  classie.remove(searchBox, 'open');
+  // remove self
+  $lightBox.remove();
+})
+
 $('#category').click(function(){
   classie.toggle(categoryMenu, 'open');
 });
