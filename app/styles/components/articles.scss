@@ -40,7 +40,7 @@ ul.related-posts {
     text-transform: uppercase;
     margin: 1em 0;
     font-family: $main-sans-font !important;
-    color: $gray;
+    color: $gray !important;
   }
   a {
     font-style: italic;
@@ -52,7 +52,19 @@ ul.related-posts {
   }
 }
 
+li.article-pin-icon a {
+    width: 20px !important;
+    height: 20px !important;
+    background-image : url('http://static.tumblr.com/rkmnwl0/HHOnjkr9y/pinterest-icon.svg') !important;
+    background-size: 20px 20px !important;
+}
+
 @media screen and (min-width: 768px) {
+  .feed-spacing {
+    content: "  ";
+    height: 4em;
+    min-width: inherit;
+  }
   .article-feed {
 
   }

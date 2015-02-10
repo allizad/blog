@@ -79,6 +79,11 @@ img#main-logo {
 // Desktop/Tablet
 
 @media screen and (min-width: 768px) {
+
+  header {
+    padding: 0 $desktop-side-margin ($margin*3);
+  }
+
   #phone-nav {
     display: none;
   }
@@ -92,8 +97,6 @@ img#main-logo {
       margin-left: 0;
       li {
         display: inline-block;
-        border-right: 1px solid gray;
-        padding: 0 1em;
         a h5 {
           color: gray;
           margin: 0;
@@ -108,12 +111,18 @@ img#main-logo {
         &:nth-child(5) {
           border: none;
         }
+        &:nth-child(odd) {
+          line-height: 2;
+          &:hover a h5 {
+            background-color: lighten($light-brand-color, 15%);
+          }
+        }
       }
     }
   }
 
   img#main-logo {
-    width: 50%;
+    width: 40%;
   }
 
   ul#social-icons {

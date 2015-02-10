@@ -7,13 +7,18 @@ form#email-subscribe {
   background-color: $light-brand-color;
   color: gray;
   padding: $margin;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
   label {
     text-transform: uppercase;
     text-align: center;
   }
-  input {
-    margin-top: 1em;
-    border-radius: 0;
-    width: 100%;
+  input.email-input {
+    margin-top: 15px;
   }
+}
+
+#mc-embedded-subscribe {
+  margin: 0;
 }
