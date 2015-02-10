@@ -1,0 +1,31 @@
+#search-wrapper {
+  background-color: $light-brand-color;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 4000000;
+  top: -100%;
+
+  input {
+    width: 75%;
+    border-radius: 0;
+  }
+  svg polygon {
+    fill: gray;
+    stroke: gray;
+  }
+  &.open {
+    top: 0;
+  }
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#close-wrapper {
+  position: absolute;
+  width: 2rem;
+  top: 9px;
+  right: 7.5%;
+}

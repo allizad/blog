@@ -1,0 +1,18 @@
+#post-navigation {
+  background: white;
+  margin-bottom: $margin*2;
+  padding: $margin;
+  position: relative;
+  height: 1.5em;
+  .older, .recent {
+    position: absolute;
+    font-style: italic;
+  }
+  .older {
+    left: $margin;
+  }
+  .recent {
+    right: $margin;
+    text-align: right;
+  }
+}

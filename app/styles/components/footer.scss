@@ -1,0 +1,17 @@
+footer {
+  padding: $margin;
+}
+
+form#email-subscribe {
+  background-color: $light-brand-color;
+  color: gray;
+  padding: $margin;
+  label {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  input {
+    border-radius: 0;
+    width: 100%;
+  }
+}

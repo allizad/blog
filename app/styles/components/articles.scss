@@ -1,0 +1,51 @@
+div.content {
+  img {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+
+article {
+  background: white;
+  margin: 2em 0 1em;
+  position: relative;
+  padding: 2.5%;
+  .article-washi {
+    position: absolute;
+    top: -10px;
+    left: 5%;
+    width: 8rem;
+  }
+}
+
+ul.tumblr-interactions, ul.related-posts, ul#side-topics {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.tumblr-interactions {
+  text-align: right;
+  li {
+    display: inline-block;
+    margin-left: $margin;
+  }
+  img {
+    height: 2rem;
+  }
+}
+
+ul.related-posts {
+  h4 {
+    text-transform: uppercase;
+    margin: 1em 0;
+  }
+  a {
+    font-style: italic;
+    line-height: 2;
+    &:hover {
+      color: $dark-brand-color;
+      text-decoration: underline;
+    }
+  }
+}

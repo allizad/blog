@@ -1,0 +1,54 @@
+div#side-nav {
+  padding: $margin $margin 0 $margin;
+  overflow: hidden;
+  background-color: white;
+  height: inherit;
+  position: relative;
+}
+
+ul#side-topics {
+  li {
+    width: (100-$margin)/2;
+    margin-bottom: $margin;
+    &:nth-child(2n-1) {
+      margin-right: $margin;
+    }
+    float: left;
+    p {
+      font-family: $main-serif-font;
+      background-color: $brand-color;
+      text-transform: uppercase;
+      color: white;
+      text-align: center;
+      margin: 0;
+      line-height: 2;
+      font-size: 0.75em;
+      letter-spacing: 0.19em;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  div.side-topic {
+    h5 {
+      margin: 0;
+    }
+  }
+}
+
+ul#side-topics li {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  &:hover {
+    img {
+      opacity: 0.4;
+    }
+    p {
+      background-color: $dark-brand-color;
+      text-decoration: none;
+    }
+  }
+}
