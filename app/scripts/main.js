@@ -1,8 +1,8 @@
-// declar variables
+// declare variables
 var categoryMenu = document.getElementById('category-list');
-    searchBtn = document.getElementById('search-button');
-    searchBox = document.getElementById('search-wrapper');
-    closeSearchIcon = document.getElementById('close-wrapper');
+var searchBtn = document.getElementById('search-button');
+var searchBox = document.getElementById('search-wrapper');
+var closeSearchIcon = document.getElementById('close-wrapper');
 
 // construct lightbox
 var $lightBox = $('<div></div>').addClass('lightbox');

@@ -307,3 +307,29 @@ form#email-subscribe {
   z-index: 1000000;
   background-color: rgba(0,0,0,.4);
 }
+
+#post-navigation {
+  background: white;
+  margin-bottom: $margin*2;
+  padding: $margin;
+  position: relative;
+  height: 1.5em;
+  .older, .recent {
+    position: absolute;
+    font-style: italic;
+  }
+  .older {
+    left: $margin;
+  }
+  .recent {
+    right: $margin;
+    text-align: right;
+  }
+}
+
+// media queries
+@media screen and (min-width: 768px) {
+  main {
+    padding: 5% 10%;
+  }
+}
