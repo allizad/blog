@@ -81,7 +81,11 @@ img#main-logo {
 @media screen and (min-width: 768px) {
 
   header {
-    padding: 0 $desktop-side-margin ($margin*3);
+    padding: 0 $desktop-side-margin 1%;
+  }
+
+  #search-button {
+    display: none;
   }
 
   #phone-nav {
@@ -122,7 +126,7 @@ img#main-logo {
   }
 
   img#main-logo {
-    width: 40%;
+    width: 270px;
   }
 
   ul#social-icons {

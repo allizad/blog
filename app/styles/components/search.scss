@@ -31,3 +31,20 @@
   top:  20%;
   right: 9.5%;
 }
+
+@media screen and (min-width: 768px) {
+  #search-wrapper {
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    width: inherit;
+    right: 10.5%;
+    input {
+      width: 100%;
+      font-size: 0.667em;
+    }
+  }
+  #close-wrapper {
+    display: none;
+  }
+}
