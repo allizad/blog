@@ -1,0 +1,20 @@
+div#copywright {
+  display: none;
+  margin-top: 2em;
+  text-align: center;
+  p, span {
+    color: $gray;
+  }
+}
+
+span.copy-symbol {
+  &:after {
+    content:"\00a9";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div#copywright {
+    display: block;
+  }
+}
