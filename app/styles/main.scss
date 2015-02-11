@@ -1,8 +1,8 @@
 // bower:scss
 // endbower
 
-@import 'typecast';
 @import "variables";
+@import 'typecast';
 @import "typography";
 @import "components/header";
 @import "components/articles";
@@ -22,7 +22,7 @@
 }
 
 // tumblr overrides
-p img, p a img, a img {
+.content p img, .content p a img, .content a img {
   width: 100%;
   height: auto;
 }
@@ -60,5 +60,11 @@ main {
   }
   main {
     padding: 0 $desktop-side-margin;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  main {
+    padding: 0 $large-desktop-side-margin;
   }
 }

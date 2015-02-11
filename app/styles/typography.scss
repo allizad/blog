@@ -1,8 +1,10 @@
 $quicksand-font: "Quicksand", sans-serif;
-$josefin-font: "Josefin Slab", serif;
+
+$museo-slab-font: 'museo-slab', serif;
+$museo-sans-font: 'museo-sans', sans-serif;
 
 $main-sans-font: $quicksand-font;
-$main-serif-font: $josefin-font;
+$main-serif-font: $museo-slab-font;
 
 p {
   color: $paragraph-color;
@@ -29,7 +31,7 @@ h2.title {
   font-size: 2em;
   a {
     font-family: $main-serif-font !important;
-    font-weight: 600;
+    font-weight: 400;
   }
 }
 
