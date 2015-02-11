@@ -4,6 +4,9 @@ div#side-nav {
   background-color: white;
   height: inherit;
   position: relative;
+  h2, img.side-washi {
+    display: none;
+  }
 }
 
 ul#side-topics {
@@ -58,12 +61,31 @@ ul#side-topics li {
     padding: 0;
     margin-top: 2em;
     height: 100%;
+    h2, img.side-washi {
+      display: block;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 1em;
+      line-height: 1;
+      margin-bottom: 0.2em;
+    }
+    img.side-washi {
+      position: absolute;
+      top: 17px;
+      left: -5px;
+      width: 30%;
+      height: auto;
+    }
   }
   ul#side-topics {
     padding: 5%;
     li {
       margin-bottom: 1em;
       width: 100%;
+      .side-wrapper {
+        position: relative;
+      }
       img {
         width: 100%;
       }
@@ -72,4 +94,6 @@ ul#side-topics li {
       }
     }
   }
+
+
 }
