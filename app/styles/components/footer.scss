@@ -19,34 +19,39 @@ form.block-form {
     color: $gray;
   }
   .block-group {
+    background: white;
     margin-top: 15px;
-    width: 65%;
+    overflow: hidden;
+    border: 1px solid gray;
+    height: 33px;
+
     margin-right: auto;
     margin-left: auto;
-    display: block;
-    overflow: hidden;
+    width: 300px;
+
     input, button {
+      border-radius: 0;
       display: block;
       float: left;
       background: white;
-      border: 1px solid gray;
+      border: none;
     }
     input {
-      border-right: none;
-      height: 32px;
-      width: 86%;
+      border-right: 1px solid gray;
+      height: inherit;
+      width: 246px;
     }
     button {
-      height: 36px;
-      width: 12%;
+      height: inherit;
+      padding: 3px 0 0 3px;
+      width: 20px;
     }
     button.arrow-icon {
       img {
         max-height: 100%;
-        max-width: 100%;
       }
       &:hover {
-        background-color: $brand-color;
+        // background-color: $brand-color;
       }
     }
   }
@@ -59,12 +64,26 @@ form.block-form {
 
   form.block-form {
     .block-group {
-      width: 100%;
+      width: 140px;
       input {
-        width: 70%;
+        width: 100px;
       }
       button {
-        width: 25%;
+        width: 30px
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  form.block-form {
+    .block-group {
+      width: 190px;
+      input {
+        width: 154px;
+      }
+      button {
+        width: 30px
       }
     }
   }
