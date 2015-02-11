@@ -3,28 +3,69 @@ footer {
 }
 
 form#email-subscribe {
-  text-align: center;
   background-color: $light-brand-color;
-  color: gray;
   padding: $margin;
   height: inherit;
   overflow: hidden;
-  position: relative;
   label {
     text-transform: uppercase;
     text-align: center;
   }
-  input.email-input {
-    margin-top: 15px;
-  }
 }
 
-#mc-embedded-subscribe {
-  margin: 0;
+form.block-form {
+  text-align: center;
+  label {
+    color: $gray;
+  }
+  .block-group {
+    margin-top: 15px;
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    overflow: hidden;
+    input, button {
+      display: block;
+      float: left;
+      background: white;
+      border: 1px solid gray;
+    }
+    input {
+      border-right: none;
+      height: 32px;
+      width: 86%;
+    }
+    button {
+      height: 36px;
+      width: 12%;
+    }
+    button.arrow-icon {
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+      &:hover {
+        background-color: $brand-color;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
   footer {
     display: none;
+  }
+
+  form.block-form {
+    .block-group {
+      width: 100%;
+      input {
+        width: 70%;
+      }
+      button {
+        width: 25%;
+      }
+    }
   }
 }
