@@ -22,9 +22,14 @@
 }
 
 // tumblr overrides
-.content p img, .content p a img, .content a img {
-  width: 100%;
-  height: auto;
+.content {
+  p img, p a img, a img  {
+    width: 100%;
+    height: auto;
+  }
+  p, span, a, ul, ol, ul li, ol li {
+    font-family: $main-sans-font !important;
+  }
 }
 
 // layout

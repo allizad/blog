@@ -1,16 +1,23 @@
 $quicksand-font: "Quicksand", sans-serif;
 
+$proxima-nova-font: proxima-nova-alt;
+
 $museo-slab-font: 'museo-slab', serif;
 $museo-sans-font: 'museo-sans', sans-serif;
 
 $main-sans-font: $quicksand-font;
-$main-serif-font: $museo-slab-font;
+$main-serif-font: $proxima-nova-font;
 
 p {
   color: $paragraph-color;
+  line-height: 1.5;
   img {
     width: 100% !important;
   }
+}
+
+input[type=text], input[type=email]  {
+  font-family: $main-sans-font !important;
 }
 
 h5 {
@@ -27,11 +34,14 @@ a {
 }
 
 h2.title {
-  margin: 0.75em 0 0.25em;
-  font-size: 2em;
+  margin: 0.75em 0 0;
+  font-size: 1.85em;
+  letter-spacing: 0.03em;
+  line-height: 128%;
   a {
     font-family: $main-serif-font !important;
-    font-weight: 400;
+    font-weight: 300;
+    text-transform: uppercase;
   }
 }
 

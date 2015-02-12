@@ -31,7 +31,7 @@ ul.tumblr-interactions {
     margin-left: $margin;
   }
   img {
-    height: 2rem;
+    height: 20px;
   }
 }
 
@@ -39,7 +39,9 @@ ul.related-posts {
   h4 {
     text-transform: uppercase;
     margin: 1em 0;
-    font-family: $main-sans-font !important;
+    font-family: $main-serif-font !important;
+    font-weight: 300;
+    letter-spacing: 0.03em;
     color: $gray !important;
   }
   a {

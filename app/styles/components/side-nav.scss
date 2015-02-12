@@ -85,13 +85,15 @@ ul#side-topics li {
       font-size: 1.25em;
       line-height: 1;
       margin-bottom: 0.2em;
+      font-family: $main-serif-font;
+      font-weight: 300;
     }
     img.side-washi {
       position: absolute;
       top: 17px;
       left: -5px;
       width: 30%;
-      height: auto;
+      height: 10%;
     }
   }
   ul#side-topics {

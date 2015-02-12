@@ -38,10 +38,12 @@ img#main-logo {
     width: 100%;
     background-color: $light-brand-color;
     border: none;
-    color: $gray;
-    font-family: $main-sans-font;
+    color: white;
+    font-family: $main-serif-font;
+    font-weight: 300;
     text-transform: uppercase;
     padding: 0.3em 0.25em;
+    letter-spacing: 0.05em;
   }
   ul#category-list {
     border: 1px solid $gray;
@@ -146,5 +148,8 @@ img#main-logo {
 @media screen and (min-width: 1044px) {
   header {
     padding: 0 $large-desktop-side-margin 1%;
+  }
+  img#main-logo {
+    width: 316px;
   }
 }

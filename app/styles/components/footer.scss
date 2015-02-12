@@ -10,6 +10,9 @@ form#email-subscribe {
   label {
     text-transform: uppercase;
     text-align: center;
+    font-size: $main-serif-font;
+    font-weight: 300;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -20,7 +23,7 @@ form.block-form {
   }
   .block-group {
     background: white;
-    margin-top: 15px;
+    margin-top: 5px;
     overflow: hidden;
     border: 1px solid gray;
     height: 33px;
@@ -75,7 +78,7 @@ form.block-form {
   }
 }
 
-@media screen and (min-width: 988px) {
+@media screen and (min-width: 1223px) {
   form.block-form {
     .block-group {
       width: 190px;
