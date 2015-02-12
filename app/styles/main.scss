@@ -30,6 +30,9 @@
   p, span, a, ul, ol, ul li, ol li {
     font-family: $main-sans-font !important;
   }
+  iframe {
+    width: 100%;
+  }
 }
 
 // layout
