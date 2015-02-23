@@ -1,0 +1,154 @@
+// override swiftype styles
+// TODO: refactor!
+body div.swiftype-widget div .autocomplete {
+  ul li {
+    p.title {
+      color: gray;
+      text-transform: uppercase;
+      em {
+        color: $brand-color;
+      }
+    }
+    p.sections {
+      text-shadow: none !important;
+      span.section {
+        color: gray;
+        em {
+          font-style: italic;
+          color: gray;
+        }
+      }
+    }
+    &.active {
+      p.title {
+        color: gray;
+        em {
+          color: $brand-color;
+        }
+      }
+      p.sections {
+        text-shadow: none !important;
+        span.section {
+          color: gray;
+          em {
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  body div.swiftype-widget div.autocomplete {
+    width: 182px !important;
+    left: initial !important;
+    right: $desktop-side-margin+1.2;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  body div.swiftype-widget div.autocomplete {
+    right: $large-desktop-side-margin+1.2;
+  }
+}
+
+// button background - active (hover)
+.swiftype-widget .autocomplete li.active {
+  border-top: 1px solid $light-brand-color;
+  border-bottom: 1px solid $light-brand-color;
+  background-color: $light-brand-color;
+  background: $light-brand-color !important;
+  -webkit-box-shadow: 0 1px 0 $light-brand-color inset;
+  -moz-box-shadow: 0 1px 0 $light-brand-color inset;
+  box-shadow: 0 1px 0 $light-brand-color inset;
+}
+
+// button text elements - active
+body div.swiftype-widget .autocomplete li.active {
+  .title {
+    color: gray;
+    em {
+      color: $brand-color;
+    }
+  }
+  .sections {
+    color: gray;
+    em {
+      color: gray;
+    }
+  }
+}
+
+body div.swiftype-widget .autocomplete ul li {
+  padding-left: 10px !important;
+}
+
+body div.swiftype-widget .autocomplete ul li.active p.title {
+  text-shadow: none !important;
+}
+
+body div.swiftype-widget .autocomplete ul li.active .sections {
+  text-shadow: none !important;
+}
+
+div#layout {
+    padding: 0 2.5%;
+}
+
+body div.autocomplete ul {
+    font-family: Quicksand !important; }
+
+body > div.lightbox {
+    z-index: 500 !important;
+}
+
+@media screen and (min-width: 768px) {
+  body div.swiftype-widget div.autocomplete {
+    width: 182px !important;
+    left: initial !important;
+    right: 10.7%; } }
+
+@media screen and (min-width: 1044px) {
+  body div.swiftype-widget div.autocomplete {
+    right: 18.7%; } }
+
+body div.swiftype-widget div.autocomplete ul li p.title {
+    color: gray;
+    text-transform: uppercase;
+}
+
+body div.swiftype-widget div.autocomplete ul li p.title em {
+    color: #52BDB4;
+}
+
+body div.swiftype-widget div.autocomplete ul li p.sections section  {
+    color: gray;
+}
+
+body div.swiftype-widget div.autocomplete ul li p.sections section em {
+    font-style: italic;
+}
+
+body div.swiftype-widget .autocomplete ul li.active {
+  border-top: 1px solid #DDF7F4;
+  border-bottom: 1px solid #DDF7F4;
+  background-color: #DDF7F4;
+  background: #DDF7F4 !important;
+  -webkit-box-shadow: 0 1px 0 #DDF7F4 inset;
+  -moz-box-shadow: 0 1px 0 #DDF7F4 inset;
+  box-shadow: 0 1px 0 #DDF7F4 inset;
+}
+
+body div.swiftype-widget .autocomplete ul li {
+  padding-left: 10px !important;
+}
+
+body div.swiftype-widget .autocomplete ul li.active p.title {
+  text-shadow: none !important;
+}
+
+body div.swiftype-widget .autocomplete ul li.active .sections {
+  text-shadow: none !important;
+}

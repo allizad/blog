@@ -11,6 +11,8 @@
 @import "components/post-navigation";
 @import "components/search";
 @import "components/copyright";
+@import "components/swiftype";
+@import "components/disqus";
 
 // pure overrides
 .pure-g * {
@@ -57,7 +59,7 @@ main {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 1000000;
+  z-index: 500;
   background-color: rgba(0,0,0,.4);
 }
 
