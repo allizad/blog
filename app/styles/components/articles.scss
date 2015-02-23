@@ -6,6 +6,9 @@ div.content {
 }
 
 article {
+  h2.title {
+    word-wrap: break-word;
+  }
   background: white;
   margin: 2em 0 1em;
   position: relative;
