@@ -3,6 +3,21 @@ div.content {
     width: 100%;
     margin-bottom: 1em;
   }
+  h2 {
+    color: $paragraph-color;
+    font-weight: 400;
+    font-family: $main-sans-font;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    &.title-divider {
+      color: white;
+      font-size: 2em;
+      background: $light-brand-color;
+      font-family: $main-serif-font;
+      text-align: center;
+    }
+  }
 }
 
 article {

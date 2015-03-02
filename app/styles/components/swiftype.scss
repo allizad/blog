@@ -1,6 +1,7 @@
 // override swiftype styles
 // TODO: refactor!
 
+// TYPEAHEAD STYLES
 body div.swiftype-widget div.autocomplete ul li, body div.swiftype-widget div.autocomplete ul li.active {
 
   // title
@@ -43,7 +44,7 @@ body div.swiftype-widget .autocomplete ul li.active {
 }
 
 body div.swiftype-widget .autocomplete ul li {
-  font-family: Quicksand !important;
+  font-family: $main-sans-font !important;
   padding-left: 10px !important;
 }
 
@@ -60,4 +61,146 @@ body div.swiftype-widget .autocomplete ul li {
   body div.swiftype-widget div.autocomplete {
     right: $large-desktop-side-margin+1.2;
   }
+}
+
+// SEARCH INDEX
+div.swiftype {
+  font-family: $main-sans-font !important;
+}
+
+
+
+body div.st-modal-scrollable div#st-main-container div.swiftype.with-results {
+
+  div.st-search-bar div.st-only-input {
+
+    form div.st-input-wrapper {
+      input#submitbutton {
+        font-family: $main-serif-font;
+        letter-spacing: 1px;
+        background: $brand-color;
+        box-shadow: none;
+        padding-top: 0;
+        color: white;
+        &:hover {
+          background: $dark-brand-color;
+        }
+      }
+
+      div.st-input-inner {
+        span.st-input-inner {
+          background: url('http://static.tumblr.com/rkmnwl0/MO3nk8pah/searchpng-icon.png') no-repeat center center;
+        }
+        a.st-input-powered-by.st-powered-by {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  a.close {
+    background-color: $brand-color;
+  }
+
+  // the list of posts
+  .st-result-wrapper .st-result-listing {
+
+    .st-search-summary h2 {
+      font-size: 16px;
+      font-family: $main-serif-font !important;
+    }
+
+    .st-results {
+      // each result post
+      .st-result .st-result-text {
+        // post title
+        h3 a {
+          font-weight: 100;
+          font-family: $main-serif-font !important;
+          text-decoration: none;
+          letter-spacing: 0.08rem;
+          line-height: 1.2;
+        }
+        // snippet
+        .st-metadata span.st-snippet {
+          font-faimly: $main-sans-font !important;
+          color: $paragraph-color;
+        }
+      }
+      // pagination
+      div.st-pagination {
+        a {
+          font-size: 14px;
+          color: $brand-color !important;
+          font-style: italic;
+          letter-spacing: 0.06em;
+          font-weight: 100;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    div.st-logo-footer.st-powered-by {
+      display: none !important;
+    }
+
+  }
+}
+
+div.swiftype div.st-result-listing div.st-search-summary h2 {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+// make sure it's visible on mobile
+.st-modal {
+  max-width: 95%;
+  left: 2.5%;
+}
+
+// overrides
+
+div.swiftype div.st-result-listing div.st-results div.st-result div.st-result-text div.st-metadata span.st-snippet {
+  font-size: 14px !important;
+  color: gray;
+  font-family: Quicksand !important;
+  line-height: 1.5;
+}
+
+div.swiftype div.st-result-listing div.st-results div.st-result div.st-result-text h3 a {
+    font-family: Proxima Nova !important;
+    line-height: 1;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+div.swiftype div.st-result-listing div.st-pagination a {
+    font-size: 14px;
+    font-style: italic;
+    font-family: Quicksand !important;
+    color: #57D2C8 !important;
+}
+
+body div.swiftype div.st-result-listing div.st-search-summary h2 {
+    font-size: 16px;
+    font-family: Proxima Nova !important;
+}
+
+div.swiftype div.st-search-bar form .st-input-wrapper input[type='submit'] {
+    background: #57D2C8 !important;
+    font-family: Proxima Nova !important;
+    letter-spacing: 0.1em;
+    color: white;
+    box-shadow: none !important;
+}
+
+div.swiftype div.st-search-bar input[type='submit']:hover {
+    background: #1A8668;
+}
+
+div.st-modal-scrollable div#st-main-container div.swiftype a.close {
+    background-color: #57D2C8;
 }
