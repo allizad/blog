@@ -63,6 +63,18 @@ main {
   background-color: rgba(0,0,0,.4);
 }
 
+p > b {
+    color: black;
+}
+
+article .content iframe.instagram-media {
+    margin-bottom: 2.5% !important;
+}
+
+article figure img {
+    height: auto !important;
+}
+
 // media queries
 @media screen and (min-width: 768px) {
   body {
